@@ -44,5 +44,5 @@ const emailUrl = config.email ? `mailto:${config.email}` : '#';
 document.querySelector('#bank-name').textContent = config.bankName || 'Cần điền trong config.js';
 document.querySelector('#bank-account').textContent = config.bankAccount || 'Cần điền trong config.js';
 document.querySelector('#bank-owner').textContent = config.bankOwner;
-document.querySelector('#transfer-note').textContent = `DT AI + SĐT`;
+document.querySelector('#transfer-note').textContent = 'Họ và tên + SĐT';
 renderProducts(); updateCart();
