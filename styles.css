@@ -45,10 +45,10 @@ footer{background:#020811;border-top:1px solid rgba(99,221,255,.14)}
 .product-buy strong small{display:block;margin-top:4px;font:500 9px var(--sans);letter-spacing:.04em;color:#8fa5b5}
 
 /* Cụm USP nằm trọn trong vùng nền trống, không phủ lên nhân vật */
-.hero-usp-list{position:absolute;z-index:5;top:50%;left:28px;transform:translateY(-50%);display:grid;gap:10px;width:min(210px,38%)}
+.hero-usp-list{position:absolute;z-index:5;top:8%;left:28px;transform:none;display:grid;gap:10px;width:min(210px,38%)}
 .hero-usp{padding:13px 15px;background:rgba(3,12,23,.82);border:1px solid rgba(99,221,255,.36);box-shadow:0 14px 35px rgba(0,0,0,.24);backdrop-filter:blur(10px)}
 .hero-usp strong,.hero-usp span{display:block;font-family:var(--sans)}
 .hero-usp strong{font-size:12px;line-height:1.25;letter-spacing:.04em;color:#eafaff}
 .hero-usp span{margin-top:4px;font-size:9px;line-height:1.35;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
-@media(max-width:900px){.hero-usp-list{left:24px;width:min(220px,38%)}}
-@media(max-width:600px){.hero-usp-list{top:48%;left:16px;width:31%;gap:7px}.hero-usp{padding:10px 9px}.hero-usp strong{font-size:9px}.hero-usp span{font-size:7px;letter-spacing:.045em}}
+@media(max-width:900px){.hero-usp-list{top:7%;left:24px;width:min(220px,38%)}}
+@media(max-width:600px){.hero-usp-list{top:6%;left:16px;width:31%;gap:7px}.hero-usp{padding:10px 9px}.hero-usp strong{font-size:9px}.hero-usp span{font-size:7px;letter-spacing:.045em}}
