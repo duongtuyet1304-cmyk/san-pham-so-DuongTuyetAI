@@ -2,8 +2,8 @@
 window.STORE_CONFIG = {
   zaloPhone: "0973079237",
   email: "duongtuyet1304@gmail.com",
-  bankName: "VPBank",
-  bankAccount: "139243382",
+  bankName: "Techcombank",
+  bankAccount: "19021703125016",
   bankOwner: "DUONG THI TUYET"
 };
 
