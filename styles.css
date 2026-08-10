@@ -39,6 +39,7 @@ footer{background:#020811;border-top:1px solid rgba(99,221,255,.14)}
 .hero-visual .data-stream{font-size:10px;font-weight:650;line-height:1.4;letter-spacing:.12em;color:#d9f7ff;background:rgba(3,12,23,.78);border-color:rgba(99,221,255,.38);box-shadow:0 10px 30px rgba(0,0,0,.22)}
 .hero-visual .stream-a{top:28px;left:28px;right:auto}
 .hero-visual .stream-b{bottom:28px;left:28px}
-.hero-portrait{object-position:62% center}
-@media(max-width:900px){.hero-visual{margin:0 28px 42px;min-height:620px;border:1px solid rgba(99,221,255,.2);overflow:hidden}.hero-portrait{object-position:58% center}.hero-visual .stream-a{top:24px;left:24px}.hero-visual .stream-b{bottom:24px;left:24px}}
-@media(max-width:600px){.hero-visual{margin:0 16px 30px;min-height:500px}.hero-portrait{object-position:57% center}.hero-visual .data-stream{font-size:8px;letter-spacing:.1em;padding:7px 9px}.hero-visual .stream-a{top:16px;left:16px}.hero-visual .stream-b{bottom:16px;left:16px}}
+.hero-portrait{object-position:78% center}
+@media(max-width:900px){.hero-visual{margin:0 28px 42px;min-height:620px;border:1px solid rgba(99,221,255,.2);overflow:hidden}.hero-portrait{object-position:76% center}.hero-visual .stream-a{top:24px;left:24px}.hero-visual .stream-b{bottom:24px;left:24px}}
+@media(max-width:600px){.hero-visual{margin:0 16px 30px;min-height:500px}.hero-portrait{object-position:75% center}.hero-visual .data-stream{font-size:8px;letter-spacing:.1em;padding:7px 9px}.hero-visual .stream-a{top:16px;left:16px}.hero-visual .stream-b{bottom:16px;left:16px}}
+.product-buy strong small{display:block;margin-top:4px;font:500 9px var(--sans);letter-spacing:.04em;color:#8fa5b5}

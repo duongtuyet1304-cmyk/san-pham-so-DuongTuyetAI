@@ -11,14 +11,14 @@ function renderProducts(filter = 'all') {
     <article class="product-card" data-type="${p.type}">
       <div class="product-art ${p.tone}"><span>${p.icon}</span><small>DƯƠNG TUYẾT AI</small></div>
       <div class="product-body"><div class="product-meta"><span>${p.label}</span><i>${p.tag}</i></div><h3>${p.title}</h3><p>${p.desc}</p>
-      <div class="product-buy"><strong>${money(p.price)}</strong><button ${p.comingSoon ? 'disabled' : ''} data-add="${p.id}">${p.comingSoon ? 'Sắp mở bán' : 'Thêm vào giỏ'} <span>＋</span></button></div></div>
+      <div class="product-buy"><strong>${money(p.price)}${p.priceUnit ? `<small>${p.priceUnit}</small>` : ''}</strong><button ${p.comingSoon ? 'disabled' : ''} data-add="${p.id}">${p.comingSoon ? 'Sắp mở bán' : 'Thêm vào giỏ'} <span>＋</span></button></div></div>
     </article>`).join('');
 }
 function saveCart() { localStorage.setItem('dtai-cart', JSON.stringify(cart)); updateCart(); }
 function updateCart() {
   const items = cart.map(id => products.find(p => p.id === id)).filter(Boolean);
   document.querySelector('#cart-count').textContent = items.length;
-  document.querySelector('#cart-items').innerHTML = items.map(p => `<div class="cart-item"><div class="cart-thumb ${p.tone}">${p.icon}</div><div><small>${p.label}</small><b>${p.title}</b><strong>${money(p.price)}</strong></div><button data-remove="${p.id}" aria-label="Xóa ${p.title}">×</button></div>`).join('');
+  document.querySelector('#cart-items').innerHTML = items.map(p => `<div class="cart-item"><div class="cart-thumb ${p.tone}">${p.icon}</div><div><small>${p.label}</small><b>${p.title}</b><strong>${money(p.price)}${p.priceUnit ? ` ${p.priceUnit}` : ''}</strong></div><button data-remove="${p.id}" aria-label="Xóa ${p.title}">×</button></div>`).join('');
   document.querySelector('#cart-total').textContent = money(items.reduce((sum, p) => sum + p.price, 0));
   document.querySelector('#cart-empty').hidden = items.length > 0;
   document.querySelector('#cart-summary').hidden = items.length === 0;
