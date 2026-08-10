@@ -40,7 +40,8 @@ document.querySelector('#close-checkout').onclick = () => dialog.close();
 
 const zaloUrl = config.zaloPhone ? `https://zalo.me/${config.zaloPhone.replace(/\D/g,'')}` : '#';
 const emailUrl = config.email ? `mailto:${config.email}` : '#';
-[['#footer-zalo',zaloUrl],['#zalo-confirm',zaloUrl],['#footer-email',emailUrl],['#email-support',emailUrl]].forEach(([sel,url]) => document.querySelector(sel).href = url);
+const confirmEmailUrl = config.email ? `mailto:${config.email}?subject=${encodeURIComponent('Xác nhận thanh toán Dương Tuyết AI')}&body=${encodeURIComponent('Họ và tên:\nSố điện thoại:\nSản phẩm đã mua:\n\nTôi gửi kèm ảnh biên lai thanh toán trong email này.')}` : '#';
+[['#footer-zalo',zaloUrl],['#footer-email',emailUrl],['#email-support',confirmEmailUrl]].forEach(([sel,url]) => { const element = document.querySelector(sel); if (element) element.href = url; });
 document.querySelector('#bank-name').textContent = config.bankName || 'Cần điền trong config.js';
 document.querySelector('#bank-account').textContent = config.bankAccount || 'Cần điền trong config.js';
 document.querySelector('#bank-owner').textContent = config.bankOwner;
